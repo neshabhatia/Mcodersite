@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mcoder! -Heaven for Programmers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+
+<!-- header Navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Mcoder!</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Topics
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="Technology.html">Technology</a></li>
+                  <li><a class="dropdown-item" href="Webdev.html">Web Development</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Support</a></li>
+                  <li><a class="dropdown-item" href="#">Write For Us</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contact.html">Contact Us</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit" fdprocessedid="eirrw">Search</button>
+              <button class="btn btn-danger mx-2" type="button" fdprocessedid="eirrw" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+              <button class="btn btn-danger" type="button" fdprocessedid="eirrw" data-bs-toggle="modal" data-bs-target="#signupModal">SignUp</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+<!-- login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-dark">
+      <div class="modal-header text-light">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form class="text-light">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email Id</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text text-secondary">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+          </div>
+          <button type="button" class="btn btn-primary d-grid gap-2 col-3 mx-auto">Login</button>
+        </form>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Sign Up Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-dark">
+      <div class="modal-header text-light">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">SignUp</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+        <form class="text-light">
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com" fdprocessedid="ky18f">
+            <label for="floatingInput" class="text-secondary">Email Address</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password" fdprocessedid="cgyr7r">
+            <label for="floatingPassword" class="text-secondary">Password</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Confirm Password" fdprocessedid="cgyr7r">
+            <label for="floatingPassword" class="text-secondary">Confirm Password</label>
+          </div>          
+          <!-- <button type="button" class="btn btn-primary d-grid gap-2 col-6 mx-auto">Create Account</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+        <div class="btn mx-2" aria-label="Basic example">
+          <button type="button" class="btn btn-primary">Create Account</button>
+          <button type="button" class="btn btn-primary">Close</button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" fdprocessedid="02sdqm"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" fdprocessedid="ctji2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3" fdprocessedid="3x66s"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img2.png" class="d-block w-100" alt="..." height="520">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-info fw-bold">Welcome To Mcoder!</h5>
+            <p class="text-info fw-bold">Technology News, Development and Trends</p>
+            <button class="btn btn-danger my-2 my-sm-0" type="button" data-bs-toggle="modal" data-bs-target="#TechModal">Technology</button>
+            <button class="btn btn-primary my-2 my-sm-0" type="button" data-bs-toggle="modal" data-bs-target="#webModal">Web Development</button>
+            <button class="btn btn-success my-2 my-sm-0" type="button" data-bs-toggle="modal" data-bs-target="#TFModal">Tech Fun</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img.png" class="d-block w-100" alt="..." height="520">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-info fw-bold">The Best Coding Blog</h5>
+            <p class="text-info fw-bold">Technology News, Development and Trends</p>
+            <button class="btn btn-danger my-2 my-sm-0" type="button" data-bs-toggle="modal" data-bs-target="#TechModal">Technology</button>
+            <button class="btn btn-primary my-2 my-sm-0" type="button" data-bs-toggle="modal" data-bs-target="#webModal">Web Development</button>
+            <button class="btn btn-success my-2 my-sm-0" type="button" data-bs-toggle="modal" data-bs-target="#TFModal">Tech Fun</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img1.png" class="d-block w-100" alt="..." height="520">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-info fw-bold">Award Winning Blog</h5>
+            <p class="text-info fw-bold">Technology News, Development and Trends</p>
+            <button class="btn btn-danger my-2 my-sm-0" type="button" data-bs-toggle="modal" data-bs-target="#TechModal">Technology</button>
+            <button class="btn btn-primary my-2 my-sm-0" type="button" data-bs-toggle="modal" data-bs-target="#webModal">Web Development</button>
+            <button class="btn btn-success my-2 my-sm-0" type="button" data-bs-toggle="modal" data-bs-target="#TFModal">Tech Fun</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev" fdprocessedid="wj2cqk">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next" fdprocessedid="aspxb9">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+<!-- Tech Modal -->
+<div class="modal fade" id="TechModal" tabindex="-1" aria-labelledby="TechModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Technology</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Technology is the dynamic engine driving the evolution of human civilization, constantly reshaping how we interact, work, and perceive the world. From the invention of the wheel to the advent of artificial intelligence, technology empowers us to transcend boundaries, amplify our capabilities, and innovate at unprecedented speeds. It serves as both a tool and a medium for progress, facilitating communication, advancing healthcare, optimizing industries, and fostering connectivity on a global scale. As we navigate the complexities of the digital age, embracing technology responsibly becomes paramount, ensuring that it serves humanity's collective interests while safeguarding our planet and preserving the essence of what it means to be human.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Web Modal -->
+<div class="modal fade" id="webModal" tabindex="-1" aria-labelledby="webModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Web Development</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Web development is the art of crafting digital landscapes where ideas flourish and interactions thrive. It blends creativity with technical prowess, weaving together code and design to build dynamic, user-centric experiences on the internet. From front-end frameworks like React and Vue.js to back-end technologies such as Node.js and Django, web development is a symphony of languages and tools harmonizing to bring ideas to life. It's a journey of constant learning and adaptation, navigating through evolving standards and user expectations. With each line of code, web developers sculpt virtual worlds where innovation meets accessibility, enabling seamless connections and enriching experiences for users worldwide.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Tech Fun Modal -->
+<div class="modal fade" id="TFModal" tabindex="-1" aria-labelledby="TFModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Tech Fun</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Tech fun is the delightful intersection where technology and enjoyment converge. It's the realm where gadgets, apps, and digital innovations transform mundane moments into entertaining experiences. From whimsical tech gadgets that defy convention to engaging augmented reality games that blur the line between the virtual and the real, tech fun brings a playful touch to the digital landscape. Embracing tech fun means discovering the joy in exploring new digital realms, tinkering with gadgets, and finding delight in the unexpected ways technology can amuse and inspire. Whether it's a quirky app, a tech-powered game night, or a hilarious interaction with a virtual assistant, tech fun adds a dash of excitement to our tech-infused lives, reminding us that innovation and amusement go hand in hand.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- cards -->
+    <div class="my-4">
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">World</strong>
+              <h3 class="mb-0">Global Conferences</h3>
+              <div class="mb-1 text-body-secondary">Nov 12</div>
+              <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                Continue reading
+                <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+              </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="card1.png" alt="..." height="250" width="200">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success">Design</strong>
+              <h3 class="mb-0">Learn Designing</h3>
+              <div class="mb-1 text-body-secondary">Nov 11</div>
+              <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                Continue reading
+                <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+              </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="card2.png" alt="..." height="250" width="200">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-danger">FrontEnd</strong>
+              <h3 class="mb-0">Bootstrap Templates</h3>
+              <div class="mb-1 text-body-secondary">Nov 12</div>
+              <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                Continue reading
+                <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+              </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="card3.png" alt="..." height="250" width="200">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-warnings">Python</strong>
+              <h3 class="mb-0">Learn Python</h3>
+              <div class="mb-1 text-body-secondary">Nov 11</div>
+              <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                Continue reading
+                <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+              </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="card4.png" alt="..." height="250" width="200">
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+
+<!-- footer -->
+    <footer class="container">
+      <p class="float-end"><a href="#">Back to top</a></p>
+      <p>© 2023–2024 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+        
+  </body>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>
